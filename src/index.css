@@ -1,0 +1,26 @@
+body , *{
+  font-family: 'Inter Tight', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+
+body{
+  margin: 0px !important;
+  background-color: rgb(240, 243, 246);
+}
+
+input{
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  width: 15rem;
+  font-size: 15px;
+}
+
+label{
+  text-align: left;
+  padding-left: 1rem ;
+  padding-bottom: .3rem;
+  font-weight: bold;
+}
