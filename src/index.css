@@ -23,3 +23,35 @@ label{
   padding-left: 1rem ;
   padding-bottom: .3rem;
 }
+
+@media (max-width: 768px) {
+  .formdate {
+    flex-direction: column;
+    gap: 10px; /* Espacement entre les éléments */
+    width: 90%;
+  }
+
+  .inputdatewheather {
+    margin: 5px 0;
+  }
+
+  .btnvalidate {
+    width: 100%;
+  }
+}
+
+@media (max-width: 310px) {
+  .formdate {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .btnvalidate {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
