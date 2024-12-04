@@ -1,0 +1,60 @@
+.highlight-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.highlight-slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 16px;
+    scrollbar-width: none; /* Masquer la barre de défilement */
+}
+
+.highlight-slider::-webkit-scrollbar {
+    display: none; /* Masquer la barre de défilement sur les navigateurs Webkit */
+}
+
+.highlight-day {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

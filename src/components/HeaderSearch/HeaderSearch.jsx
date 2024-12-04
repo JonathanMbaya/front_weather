@@ -22,12 +22,12 @@ function HeaderSearch(props) {
 
       <div style={styles.formdate}>
         <div style={styles.inputdatewheather}>
-          <label htmlFor="begin">Date de début</label>
+          <label style={styles.label} htmlFor="begin">Date de début</label>
           <input type='date' placeholder='Choisir une date de début' />
         </div>
 
         <div style={styles.inputdatewheather}>
-          <label htmlFor="end">Date de fin</label>
+          <label style={styles.label} htmlFor="end">Date de fin</label>
           <input type='date' placeholder='Choisir une date de fin' />
         </div>
 
@@ -64,14 +64,14 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center',
   },
   btnvalidate: {
-    color: '#EAFF00',
-    backgroundColor: '#2CE3FF',
+    backgroundColor: '#EAFF00',
     cursor: 'pointer',
-    fontWeight: 'bold',
   },
+  label : {
+    color : '#EAFF00'
+  }
 };
 
 export default HeaderSearch;
